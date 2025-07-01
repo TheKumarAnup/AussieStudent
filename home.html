@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Affan - PWA Mobile HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <meta name="theme-color" content="#0134d4">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Title -->
+  <title>Assignment Help & Writing Service In Australia By Aussie Student</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/core-img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner-grow text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Internet Connection Status -->
+  <div class="internet-connection-status" id="internetStatus"></div>
+
+  <!-- Header Area -->
+  <div class="header-area" id="headerArea">
+    <div class="container">
+      <!-- Header Content -->
+      <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+        <!-- Logo Wrapper -->
+        <div class="logo-wrapper">
+          <a href="home.html">
+            <img src="img/core-img/logo.png" alt="">
+          </a>
+        </div>
+
+        <!-- Navbar Toggler -->
+        <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas"
+          aria-controls="affanOffcanvas">
+          <span class="d-block"></span>
+          <span class="d-block"></span>
+          <span class="d-block"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- # Sidenav Left -->
+  <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1"
+    aria-labelledby="affanOffcanvsLabel">
+
+    <button class="btn-close btn-close-white text-reset" type="button" data-bs-dismiss="offcanvas"
+      aria-label="Close"></button>
+
+    <div class="offcanvas-body p-0">
+      <div class="sidenav-wrapper">
+        <!-- Sidenav Profile -->
+        <div class="sidenav-profile bg-gradient">
+          <div class="sidenav-style1"></div>
+
+          <!-- User Thumbnail -->
+          <div class="user-profile">
+            <img src="img/bg-img/2.jpg" alt="">
+          </div>
+
+          <!-- User Info -->
+          <div class="user-info">
+            <h6 class="user-name mb-0">Guest</h6>
+            <span>Site Visitor</span>
+          </div>
+        </div>
+
+        <!-- Sidenav Nav -->
+        <ul class="sidenav-nav ps-0">
+          <li>
+            <a href="home.html"><i class="ti ti-smart-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="/"><i class="ti ti-heart"></i> Academic Level
+              <span class="badge bg-danger rounded-pill">5+</span>
+            </a>
+          </li>
+          <li>
+            <a href="/"><i class="ti ti-folders"></i> Course & Subjects
+              <span class="badge bg-success rounded-pill">20+</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="ti ti-shopping-bag"></i> Services</a>
+            <ul>
+              <li>
+                <a href="shop-grid.html"> Shop Grid</a>
+              </li>
+              <li>
+                <a href="shop-list.html"> Shop List</a>
+              </li>
+              <li>
+                <a href="shop-details.html"> Shop Details</a>
+              </li>
+              <li>
+                <a href="cart.html"> Cart</a>
+              </li>
+              <li>
+                <a href="checkout.html"> Checkout</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="settings.html"><i class="ti ti-settings"></i> Settings</a>
+          </li>
+          <li>
+            <div class="night-mode-nav">
+              <i class="ti ti-moon"></i> Night Mode
+              <div class="form-check form-switch">
+                <input class="form-check-input form-check-success" id="darkSwitch" type="checkbox">
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="login.html"><i class="ti ti-logout"></i> Logout</a>
+          </li>
+        </ul>
+
+        <div class="mt-auto">
+          <!-- Social Info -->
+          <div class="social-info-wrap">
+            <a href="#">
+              <i class="ti ti-brand-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="ti ti-brand-x"></i>
+            </a>
+            <a href="#">
+              <i class="ti ti-brand-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Copyright Info -->
+          <div class="copyright-info">
+            <p>
+              <span id="copyrightYear"></span>
+              &copy; Made by <a href="#"> Aussie Student</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content-wrapper">
+
+    <!-- Tiny Slider One Wrapper -->
+    <div class="tiny-slider-one-wrapper">
+      <div class="tiny-slider-one">
+        <!-- Single Hero Slide -->
+        <div>
+          <div class="single-hero-slide bg-overlay" style="background-image: url('img/bg-img/31.jpg')">
+            <div class="h-100 d-flex align-items-center text-center">
+              <div class="container">
+                <h3 class="text-white mb-1">Order Assignment Help</h3>
+                <p class="text-white mb-4">Ejoy our coursework writing support services to complete your assignments</p>
+                <a class="btn btn-creative btn-warning" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        <div>
+          <div class="single-hero-slide bg-overlay" style="background-image: url('img/bg-img/33.jpg')">
+            <div class="h-100 d-flex align-items-center text-center">
+              <div class="container">
+                <h3 class="text-white mb-1">Qualified & Skilled Writers</h3>
+                <p class="text-white mb-4">Get your assignment done with highly qualified (Ph.D scholars) authors</p>
+                <a class="btn btn-creative btn-warning" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        <div>
+          <div class="single-hero-slide bg-overlay" style="background-image: url('img/bg-img/32.jpg')">
+            <div class="h-100 d-flex align-items-center text-center">
+              <div class="container">
+                <h3 class="text-white mb-1">Human-Written (AI-free)</h3>
+                <p class="text-white mb-4">Do your homework with the help of native Australian writers</p>
+                <a class="btn btn-creative btn-warning" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        <div>
+          <div class="single-hero-slide bg-overlay" style="background-image: url('img/bg-img/33.jpg')">
+            <div class="h-100 d-flex align-items-center text-center">
+              <div class="container">
+                <h3 class="text-white mb-1">Zero Plagiarism</h3>
+                <p class="text-white mb-4">Get 0 Turnitin similarity index with 0 plagiarism</p>
+                <a class="btn btn-creative btn-warning" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        <div>
+          <div class="single-hero-slide bg-overlay" style="background-image: url('img/bg-img/1.jpg')">
+            <div class="h-100 d-flex align-items-center text-center">
+              <div class="container">
+                <h3 class="text-white mb-1">Achieve Straight A's</h3>
+                <p class="text-white mb-4">Score the highest grades (A+) in your university</p>
+                <a class="btn btn-creative btn-warning" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-3"></div>
+
+    <div class="container direction-rtl">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h4 class="text-center">What Make Us Different</h4>
+          <br>
+          <div class="row g-3">
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/pwa.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Humman Written (AI-free)</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/bootstrap.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Zero Plagiarism</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/js.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Native Australian Writers</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card bg-secondary mb-3">
+        <div class="card-body">
+          <h1>Online Assignment Help In Australia</h1>
+          <p>Order online assignment help in Australia. We provide world class academic writing services such as case study or thesis help to the students in Australia or the foreign learners enrolled in Aussie educational institutions . Enjoy our human-written (AI-free) & plagiarism free coursework writing support & achieve the highest grades that you aspire for by timely submitting your assignments to the universities.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card card-bg-img bg-img bg-overlay mb-3" style="background-image: url('img/bg-img/3.jpg')">
+        <div class="card-body direction-rtl p-4">
+          <h2 class="text-white">Boost Your Grades</h2>
+          <p class="mb-3 text-white">If you got low grades in the last university exam, benefit from our facilities to improve your grades.</p>
+          <a class="btn btn-warning" href="/">Order Now <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container direction-rtl">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h4 class="text-center">How to Order</h4>
+          <br>
+          <div class="row g-3">
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/sass.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Contact Us</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/npm.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Tell The Requirements</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/gulp.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Make Payments</h6>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <p>To place order, you need to tell your contact details (like name & mobile number ) and furnish the full information about your assignments such as type of assignment, name of university, submission deadline, word count, referencing styles etc. subsequently you have to pay the amount for final submission of your order.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card bg-primary mb-3 bg-img" style="background-image: url('img/core-img/1.png')">
+        <div class="card-body direction-rtl p-4">
+          <h2 class="text-white">1 Million+ Orders Deliverd</h2>
+          <p class="mb-3 text-white">More than 1 million students achieved straight A's with our support and recomend our services to their friends.</p>
+          <a class="btn btn-warning" href="/">Ask for Quotes <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container direction-rtl">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row g-3">
+            <h4 class="text-center">Prime Services</h4>
+            <br>
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/dark.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Case Study Help</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/rtl.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Dissertation Writing</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/code.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Editing & Proofreading</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card bg-dark mb-3">
+        <div class="card-body direction-rtl p-4">
+          <h2 class="text-white">Offer & Gift Vouchers</h2>
+          <p class="mb-3 text-white">Get exciting gift like cash back & offer with coupon codes. Grab your opportunity before the time ends.</p>
+          <a class="btn btn-warning" href="pages.html">Coupon Codes <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container direction-rtl">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h4 class="text-center">Hot Course & Subjects</h4>
+          <br>
+          <div class="row g-3">
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/star.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Management</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/elegant.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Nursing</h6>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="feature-card mx-auto text-center">
+                <div class="card mx-auto bg-gray">
+                  <img src="img/demo-img/lightning.png" alt="">
+                </div>
+                <h6 class="mb-0 fz-14">Law</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card bg-secondary mb-3">
+        <div class="card-body">
+          <h3>Students Review</h3>
+
+          <div class="testimonial-slide-three-wrapper">
+            <div class="testimonial-slide3 testimonial-style3">
+
+              <!-- Single Testimonial Slide -->
+              <div class="single-testimonial-slide">
+                <div class="text-content">
+                  <div class="d-flex gap-1 mb-2">
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                  </div>
+                  <h6 class="mb-2">The code looks clean, and the designs are excellent. I recommend.</h6>
+                  <span class="d-block">Mrrickez, Themeforest</span>
+                </div>
+              </div>
+
+              <!-- Single Testimonial Slide -->
+              <div class="single-testimonial-slide">
+                <div class="text-content">
+                  <div class="d-flex gap-1 mb-2">
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                  </div>
+                  <h6 class="mb-2">All complete, <br> great craft.</h6>
+                  <span class="d-block">Mazatlumm, Themeforest</span>
+                </div>
+              </div>
+
+              <!-- Single Testimonial Slide -->
+              <div class="single-testimonial-slide">
+                <div class="text-content">
+                  <div class="d-flex gap-1 mb-2">
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                  </div>
+                  <h6 class="mb-2">Awesome template! <br> Excellent support!</h6>
+                  <span class="d-block">Vguntars, Themeforest</span>
+                </div>
+              </div>
+
+              <!-- Single Testimonial Slide -->
+              <div class="single-testimonial-slide">
+                <div class="text-content">
+                  <div class="d-flex gap-1 mb-2">
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                  </div>
+                  <h6 class="mb-2">Nice modern design, I love the product.</h6>
+                  <span class="d-block">electroMEZ, Themeforest</span>
+                </div>
+              </div>
+
+              <!-- Single Testimonial Slide -->
+              <div class="single-testimonial-slide">
+                <div class="text-content">
+                  <div class="d-flex gap-1 mb-2">
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                    <i class="ti ti-star-fill text-warning"></i>
+                  </div>
+                  <h6 class="mb-2">Excquisite pixel perfect design, with an abundance of content, well documented.</h6>
+                  <span class="d-block">webpixie, Themeforest</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-3">
+      <div class="tiny-slider-three-wrapper">
+        <h4 class="text-center">Tips & Blogs</h4>
+        <div class="tns-outer" id="tns3-ow"><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">4 to 6</span>  of 3</div><div id="tns3-mw" class="tns-ovh"><div class="tns-inner" id="tns3-iw"><div class="tiny-slider-three  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" id="tns3" style="transform: translate3d(-57.1429%, 0px, 0px);"><div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <div class="single-hero-slide bg-img" style="background-image: url('img/bg-img/18.jpg')">
+              <div class="slide-content">
+                <h2 class="text-dark">Wooden Chair</h2>
+                <h1 class="text-dark mb-5 fw-bold">$24</h1><a class="btn btn-creative btn-light" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div><div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <div class="single-hero-slide bg-img" style="background-image: url('img/bg-img/35.jpg')">
+              <div class="slide-content">
+                <h2>Magic Ball</h2>
+                <h1 class="mb-5 fw-bold">$16</h1><a class="btn btn-creative btn-primary" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Hero Slide -->
+          <div class="tns-item" id="tns3-item0" aria-hidden="true" tabindex="-1">
+            <div class="single-hero-slide bg-img" style="background-image: url('img/bg-img/9.jpg')">
+              <div class="slide-content">
+                <h2 class="text-white">Sports Shoe</h2>
+                <h1 class="text-white mb-5 fw-bold">$199</h1><a class="btn btn-creative btn-warning" href="#">Buy
+                  Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Hero Slide -->
+          <div class="tns-item tns-slide-active" id="tns3-item1">
+            <div class="single-hero-slide bg-img" style="background-image: url('img/bg-img/18.jpg')">
+              <div class="slide-content">
+                <h2 class="text-dark">Wooden Chair</h2>
+                <h1 class="text-dark mb-5 fw-bold">$24</h1><a class="btn btn-creative btn-light" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Hero Slide -->
+          <div class="tns-item tns-slide-active" id="tns3-item2">
+            <div class="single-hero-slide bg-img" style="background-image: url('img/bg-img/35.jpg')">
+              <div class="slide-content">
+                <h2>Magic Ball</h2>
+                <h1 class="mb-5 fw-bold">$16</h1><a class="btn btn-creative btn-primary" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        <div class="tns-item tns-slide-cloned tns-slide-active">
+            <div class="single-hero-slide bg-img" style="background-image: url('img/bg-img/9.jpg')">
+              <div class="slide-content">
+                <h2 class="text-white">Sports Shoe</h2>
+                <h1 class="text-white mb-5 fw-bold">$199</h1><a class="btn btn-creative btn-warning" href="#">Buy
+                  Now</a>
+              </div>
+            </div>
+          </div><div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <div class="single-hero-slide bg-img" style="background-image: url('img/bg-img/18.jpg')">
+              <div class="slide-content">
+                <h2 class="text-dark">Wooden Chair</h2>
+                <h1 class="text-dark mb-5 fw-bold">$24</h1><a class="btn btn-creative btn-light" href="#">Buy Now</a>
+              </div>
+            </div>
+          </div></div></div></div></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="text-center">FAQs</h4>
+          <div class="accordion accordion-flush accordion-style-two" id="accordionStyle2">
+            <!-- Single Accordion -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="accordionFour">
+                <h6 data-bs-toggle="collapse" data-bs-target="#accordionStyleFour" aria-expanded="true" aria-controls="accordionStyleFour"><i class="ti ti-plus"></i>What is the refund policy?</h6>
+              </div>
+              <div class="accordion-collapse collapse show" id="accordionStyleFour" aria-labelledby="accordionFour" data-bs-parent="#accordionStyle2">
+                <div class="accordion-body">
+                  <p class="mb-0">Refunds are issued within 30 days of purchase for unused items in original condition,
+                    with a receipt. Shipping fees are non-refundable.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Accordion -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="accordionFive">
+                <h6 class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyleFive" aria-expanded="false" aria-controls="accordionStyleFive"><i class="ti ti-plus"></i>Can it accept
+                  Paypal?</h6>
+              </div>
+              <div class="accordion-collapse collapse" id="accordionStyleFive" aria-labelledby="accordionFive" data-bs-parent="#accordionStyle2">
+                <div class="accordion-body">
+                  <p class="mb-0">Yes, we accept PayPal as a payment method.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Accordion -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="accordionSix">
+                <h6 class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyleSix" aria-expanded="false" aria-controls="accordionStyleSix"><i class="ti ti-plus"></i>What is PWA
+                  Ready?</h6>
+              </div>
+              <div class="accordion-collapse collapse" id="accordionStyleSix" aria-labelledby="accordionSix" data-bs-parent="#accordionStyle2">
+                <div class="accordion-body">
+                  <p class="mb-0">"PWA ready" means that the website or application is optimized to function as a
+                    Progressive Web App, offering features like offline access, push notifications, and a native
+                    app-like experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-3"></div>
+  </div>
+
+  <!-- Footer Nav -->
+  <div class="footer-nav-area" id="footerNav">
+    <div class="container px-0">
+      <!-- Footer Content -->
+      <div class="footer-nav position-relative">
+        <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+          <li class="active">
+            <a href="home.html">
+              <i class="ti ti-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/">
+              <i class="ti ti-folders"></i>
+              <span>Order</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/">
+              <i class="ti ti-heart"></i>
+              <span>Quotes</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/">
+              <i class="ti ti-message-circle"></i>
+              <span>Chat</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/">
+              <i class="ti ti-settings"></i>
+              <span>Status</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- All JavaScript Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slideToggle.min.js"></script>
+  <script src="js/internet-status.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/venobox.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/vanilla-dataTables.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/dark-rtl.js"></script>
+  <script src="js/active.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>
