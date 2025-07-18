@@ -1039,7 +1039,7 @@ img {
   height: auto;
 }
 
-@media only screen and (min-width:1400px) {
+/* deactivated by Anup @media only screen and (min-width:1400px) {
   .container {
     max-width: 760px;
   }
@@ -1058,7 +1058,7 @@ img {
   .container {
     max-width: 580px;
   }
-}
+} */
 
 .custom-container {
   margin-left: auto;
